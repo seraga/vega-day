@@ -27,7 +27,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Pro Demo',
+      title: 'Vega-Day',
       template: './src/index.html',
     }),
     new ExtractTextPlugin({
