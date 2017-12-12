@@ -1,0 +1,31 @@
+// app.scss
+
+@import
+  'scss/settings.normalize',
+  'scss/settings.colors',
+  'scss/settings.typography';
+
+@import
+  'scss/blocks.about',
+  'scss/blocks.promotion',
+  'scss/blocks.advantages',
+  'scss/blocks.contact',
+  'scss/blocks.subscribe';
+
+@import
+  'scss/components.carousel',
+  'scss/components.countdown',
+  'scss/components.counter',
+  'scss/components.gallery',
+  'scss/components.modal',
+  'scss/components.form',
+  'scss/components.inline-form';
+
+@import
+  'scss/layout.header',
+  'scss/layout.navigation',
+  'scss/layout.logo',
+  'scss/layout.footer';
+
+@import
+  'scss/util';

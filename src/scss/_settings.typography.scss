@@ -1,0 +1,23 @@
+
+// начертания шрифтов
+$light: 100;
+$regular: 400;
+$bold: 700;
+
+// основной шрифт
+$base-font-family: 'Open Sans', Arial, sans-serif;
+$base-font-weight: $regular;
+$base-font-size: 14px;
+$base-line-height: 1.3;
+
+// headings
+$header-font-weight: $bold;
+
+
+
+body {
+  background-color: $primary-background;
+  p {
+    color: $primary-color;
+  }
+}
