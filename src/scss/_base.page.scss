@@ -1,21 +1,31 @@
+///*------------------------------------*\
+//    #PAGE
+//\*------------------------------------*/
+
+$page-font-weight: 400;
+$page-font-size: 14px;
+$page-line-height: 1.3;
+$page-font-family: "OpenSans", Arial, sans-serif;
 
 
 
-// основной шрифт
-$base-font-family: 'Open Sans', Arial, sans-serif;
-$base-font-weight: 400;
-$base-font-size: 14px;
-$base-line-height: 1.3;
 
 
+@font-face {
+    font-family: 'OpenSans';
+    src: url('fonts/opensans-regular.woff2') format('woff2'),
+         url('fonts/opensans-regular.woff') format('woff'),
+         url('fonts/opensans-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body {
-  background-color: $primary-background;
-  p {
-    color: $color-gray-1;
-    cursor: default;
-    @include media(md) { color: red; }
-    @include media(lg) { color: blue; }
-    &:hover { color: $color-gray-3}
-  }
+  font-weight: $page-font-weight;
+  font-size: $page-font-size;
+  line-height: $page-line-height;
+  font-family: $page-font-family;
+
+  color: $color-gray-1;
+  background-color: $color-white;
 }

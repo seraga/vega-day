@@ -1,0 +1,8 @@
+
+p {
+    color: $color-gray-1;
+    cursor: default;
+    @include media(md) { color: red; }
+    @include media(lg) { color: blue; }
+    &:hover { color: $color-gray-3}
+  }
