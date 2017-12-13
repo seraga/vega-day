@@ -1,0 +1,35 @@
+/*------------------------------------*\
+    #SETTINGS-RESPONSIVE
+\*------------------------------------*/
+
+$break-small: 576px;
+$break-medium: 768px;
+$break-large: 992px;
+$break-x-large: 1200px;
+
+
+
+
+
+@mixin media($class) {
+
+  @if $class == sm {
+    @media screen and (min-width: $break-small) { @content; }
+  }
+
+  @else if $class == md {
+    @media screen and (min-width: $break-medium) { @content; }
+  }
+
+  @else if $class == lg {
+    @media screen and (min-width: $break-large) { @content; }
+  }
+
+  @else if $class == xl {
+    @media screen and (min-width: $break-x-large) { @content; }
+  }
+
+  @else {
+    @warn "Breakpoint mixin supports: sm, md, lg, xl";
+  }
+}

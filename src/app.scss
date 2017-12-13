@@ -1,31 +1,95 @@
-// app.scss
+/*------------------------------------*\
+    #VEGA-DAY
+\*------------------------------------*/
 
-@import
-  'scss/settings.normalize',
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Colors...............Manage our color palette.
+ * Responsive...........Set up and name our breakpoints.
+ *
+ * RESET
+ * Normalize.css........A level playing field.
+ * Box-sizing...........Better default `box-sizing`.
+ *
+ * BASE
+ * Page.................Page-level styles (HTML element).
+ * Headings.............Heading styles.
+ * Type.................Misc type styles.
+ * Links................Hyperlink styles.
+ * Images...............Image element styling.
+ *
+ * OBJECTS
+ * Carousel.............Carousel styling.
+ * Countdown............Countdown timer styling.
+ * Counter..............Counter-Up styling.
+ * Gallery..............Gallery wrapper.
+ * Modal................Modal for gallery.
+ * Form.................Form styles.
+ * Inline-form..........Inline-form styles.
+ *
+ * COMPONENTS
+ * Page-head............Page header styles.
+ * Page-foot............Page footer styles.
+ * Page-copyright.......Page copyright styles.
+ * Navigation...........Site’s main navigation area.
+ * Logo.................Logotype styling.
+ * About................About block.
+ * Promo................Lead promo block on the home page.
+ * Advantages...........Advantages block.
+ * Contacts.............Contacts block.
+ * Subscribe............Subscribe block.
+ *
+ * TRUMPS
+ * Show/hide............Helpers to show and hide stuff.
+ * Atomic...............Utility classes (automatically created).
+ */
+
+
+
+
+
+/**
+ * #IMPORTS
+ */
+
+ @import
   'scss/settings.colors',
-  'scss/settings.typography';
+  'scss/settings.responsive';
 
 @import
-  'scss/blocks.about',
-  'scss/blocks.promotion',
-  'scss/blocks.advantages',
-  'scss/blocks.contact',
-  'scss/blocks.subscribe';
+  'scss/reset.normalize',
+  'scss/reset.box-sizing';
 
 @import
-  'scss/components.carousel',
-  'scss/components.countdown',
-  'scss/components.counter',
-  'scss/components.gallery',
-  'scss/components.modal',
-  'scss/components.form',
-  'scss/components.inline-form';
+  'scss/base.page',
+  'scss/base.headings',
+  'scss/base.type',
+  'scss/base.links',
+  'scss/base.images';
 
 @import
-  'scss/layout.header',
-  'scss/layout.navigation',
-  'scss/layout.logo',
-  'scss/layout.footer';
+  'scss/objects.carousel',
+  'scss/objects.countdown',
+  'scss/objects.counter',
+  'scss/objects.gallery',
+  'scss/objects.modal',
+  'scss/objects.form',
+  'scss/objects.inline-form';
 
 @import
-  'scss/util';
+  'scss/components.page-head',
+  'scss/components.page-foot',
+  'scss/components.page-copyright',
+  'scss/components.navigation',
+  'scss/components.logo',
+  'scss/components.about',
+  'scss/components.promo',
+  'scss/components.advantages',
+  'scss/components.contacts',
+  'scss/components.subscribe';
+
+@import
+  'scss/trumps.show-hide',
+  'scss/trumps.atomic';
