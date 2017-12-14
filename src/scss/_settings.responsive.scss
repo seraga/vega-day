@@ -2,9 +2,9 @@
     #SETTINGS-RESPONSIVE
 \*------------------------------------*/
 
-$break-small: 576px;
-$break-medium: 768px;
-$break-large: 992px;
+$break-small:   576px;
+$break-medium:  768px;
+$break-large:   992px;
 $break-x-large: 1200px;
 
 
@@ -30,6 +30,6 @@ $break-x-large: 1200px;
   }
 
   @else {
-    @warn "Breakpoint mixin supports: sm, md, lg, xl";
+    @warn "media mixin supports: sm, md, lg, xl";
   }
 }

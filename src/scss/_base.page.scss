@@ -12,12 +12,12 @@ $page-font-family: "OpenSans", Arial, sans-serif;
 
 
 @font-face {
-    font-family: 'OpenSans';
-    src: url('fonts/opensans-regular.woff2') format('woff2'),
-         url('fonts/opensans-regular.woff') format('woff'),
-         url('fonts/opensans-regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'OpenSans';
+  src:  url('fonts/opensans-regular.woff2') format('woff2'),
+        url('fonts/opensans-regular.woff') format('woff'),
+        url('fonts/opensans-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
@@ -26,6 +26,6 @@ body {
   line-height: $page-line-height;
   font-family: $page-font-family;
 
-  color: $color-gray-1;
-  background-color: $color-white;
+  color: $gray-1;
+  background-color: $white;
 }

@@ -1,8 +1,28 @@
+///*------------------------------------*\
+//    #TYPE
+//\*------------------------------------*/
+
 
 p {
-    color: $color-gray-1;
-    cursor: default;
-    @include media(md) { color: red; }
-    @include media(lg) { color: blue; }
-    &:hover { color: $color-gray-3}
-  }
+  margin-top: 0;
+  margin-left: 0;
+
+  color: $color-gray-1;
+  cursor: default;
+  @include media(md) { color: red; }
+  @include media(lg) { color: blue; }
+  &:hover { color: $green-1}
+}
+
+span {
+  margin-left: 0;
+}
+
+hr {
+  margin: 0 auto;
+  padding-bottom: 50px;
+  width: 50px;
+
+  border: 0;
+  border-top: 2px solid $black;
+}

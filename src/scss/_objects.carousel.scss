@@ -1,0 +1,155 @@
+///*------------------------------------*\
+//    #CAROUSEL
+//\*------------------------------------*/
+
+.carousel {
+  position: relative;
+  margin: auto;
+  background: #d4d4d4;
+}
+
+.carousel__active {
+  position: relative;
+  z-index: 1;
+  left: 0%;
+
+  &.-left {
+    left: -100%;
+    animation: 2.6s carousel-activ-left ease-out;
+  }
+
+  &.-right {
+    left: 100%;
+    animation: 2.6s carousel-activ-right ease-out;
+  }
+}
+
+@keyframes carousel-activ-left {
+  from { left: 0; }
+  to { left: -100%; }
+}
+
+@keyframes carousel-activ-right {
+  from { left: 0; }
+  to { left: 100%; }
+}
+
+.carousel__next {
+  z-index: 1;
+  left: 100%;
+
+  &.left {
+    left: 0;
+    animation: 2.6s carousel-next-left ease-out;
+  }
+  &.-right {
+    left: 0;
+    animation: 2.6s carousel-prev-right ease-out;
+  }
+}
+
+@keyframes carousel-next-left {
+  from { left: 100%; }
+  to { left: 0; }
+}
+
+@keyframes carousel-prev-right {
+  from { left: -100%; }
+  to { left: 0; }
+}
+
+.carousel__prev {
+  z-index: 1;
+  left: -100%;
+}
+
+
+
+
+
+/**
+ * .carousel__inner
+ */
+
+.carousel__inner {
+  position: relative;
+  overflow: hidden;
+  width: inherit;
+  height: inherit;
+}
+
+.carousel__inner > * {
+  position: absolute;
+  top: 0;
+  width: inherit;
+  height: inherit;
+}
+
+
+
+
+
+/**
+ * .carousel__control
+ */
+
+.carousel__control {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+
+  font-size: 25px;
+  line-height: 35px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, .3);
+
+  border-radius: 100%;
+  transform: translateY(-50%);
+  cursor: pointer;
+
+  &--left {
+    left: 0px;
+  }
+  &--right {
+    right: 0px;
+  }
+}
+
+
+
+
+
+/**
+ * .carousel__indicators
+ */
+
+.carousel__indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  padding-left: 0;
+  margin-left: -30%;
+  text-align: center;
+  list-style: none;
+}
+
+.carousel__indicators > * {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+
+.carousel__active-indicator { background-color: #fff; }
