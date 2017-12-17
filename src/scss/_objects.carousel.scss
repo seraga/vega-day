@@ -6,6 +6,8 @@ $carousel-indicators-color: rgba(0, 0, 0, 0.4);
 $carousel-indicators-border-color: $white;
 $carousel-indicators-active-color: $white;
 
+$carousel-text-color: $white;
+
 
 
 
@@ -140,3 +142,40 @@ $carousel-indicators-active-color: $white;
 }
 
 .carousel__active-indicator { background-color: $carousel-indicators-active-color; }
+
+
+/**
+ * .carousel__slides
+ */
+
+.carousel__slide {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &--1 { background-image: url("./img/slide1.jpg"); }
+  &--2 { background-image: url("./img/slide2.jpg"); }
+  &--3 { background-image: url("./img/slide3.jpg"); }
+ }
+
+
+/**
+ * .carousel__text
+ */
+
+ .carousel__text {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   margin-top: -30px;
+   margin-bottom: 0;
+
+   font-size: 40px;
+   text-transform: none;
+   color: $carousel-text-color;
+
+   transform: translate(-50%, -50%);
+
+   @include media(sm) {font-size: 64px;}
+   @include media(xl) {font-size: 96px;}
+ }
