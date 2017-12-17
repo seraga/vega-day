@@ -2,13 +2,18 @@
 //    #COUNTDOWN
 //\*------------------------------------*/
 
+$countdown-number-color: $gray-2;
+$countdown-text-color: $green-5;
+
+
+
+
+
 .countdown {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
   @include media(sm){ flex-wrap: nowrap; }
-
-  color: #2a3c3a;
 }
 
 .countdown__literal {
@@ -22,11 +27,11 @@
   padding: 0;
 
   font-weight: 100;
+  line-height: 80px;
   font-size: 40px;
   @include media(sm){ font-size: 72px; }
-  line-height: 80px;
 
-  color: #2a3c3a;
+  color: $countdown-number-color;
 }
 
 
@@ -34,9 +39,8 @@
   margin: 0;
   padding-top: 12px;
 
-  font-weight: 500;
   font-size: 18px;
   text-align: center;
 
-  color: #aed6d5;
+  color: $countdown-text-color;
 }

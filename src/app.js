@@ -1,4 +1,4 @@
-import 'babel-polyfill';
+// import 'babel-polyfill';
 
 import './app.scss'
 import './img/dish1.jpg';

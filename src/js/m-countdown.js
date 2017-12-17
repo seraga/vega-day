@@ -19,9 +19,14 @@
       seconds = 0;
     }
 
-    d.innerHTML = days.toString().padStart(2,'0');
-    h.innerHTML = hours.toString().padStart(2,'0');
-    m.innerHTML = minutes.toString().padStart(2,'0');
-    s.innerHTML = seconds.toString().padStart(2,'0');
+    if (days.toString().length === 1) days = '0' + days.toString();
+    if (hours.toString().length === 1) hours = '0' + hours.toString();
+    if (minutes.toString().length === 1) minutes = '0' + minutes.toString();
+    if (seconds.toString().length === 1) seconds = '0' + seconds.toString();
+
+    d.innerHTML = days;
+    h.innerHTML = hours;
+    m.innerHTML = minutes;
+    s.innerHTML = seconds;
   }, 1000);
 })();
