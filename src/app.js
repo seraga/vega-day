@@ -1,25 +1,26 @@
+import 'babel-polyfill';
 
-const css = require('./app.scss');
-require('./img/dish1.jpg');
-require('./img/dish2.jpg');
-require('./img/dish3.jpg');
-require('./img/dish4.jpg');
-require('./img/dish5.jpg');
-require('./img/dish6.jpg');
-require('./img/dish7.jpg');
-require('./img/dish8.jpg');
+import './app.scss'
+import './img/dish1.jpg';
+import './img/dish2.jpg';
+import './img/dish3.jpg';
+import './img/dish4.jpg';
+import './img/dish5.jpg';
+import './img/dish6.jpg';
+import './img/dish7.jpg';
+import './img/dish8.jpg';
 
-// require('./js/layout');
-// require('./js/ural');
+// import './js/layout';
+// import './js/ural';
 
 
-require('./js/m-carousel');
-require('./js/m-countdown');
-require('./js/m-counter');
-require('./js/m-map');
-require('./js/m-modal');
-require('./js/m-navigation');
-require('./js/m-paralax');
+import './js/m-carousel';
+import './js/m-countdown';
+import './js/m-counter';
+import './js/m-map';
+import './js/m-modal';
+import './js/m-navigation';
+import './js/m-paralax';
 
 
 
