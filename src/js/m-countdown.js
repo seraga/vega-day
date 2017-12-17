@@ -7,14 +7,21 @@
 
   setInterval(() => {
     const time = new Date(deadline) - new Date();
-    const seconds = Math.floor((time / 1000) % 60);
-    const minutes = Math.floor((time / 60000) % 60); // 1000 * 60 = 60000
-    const hours = Math.floor((time / 3600000) % 24); // 1000 * 60 * 60 = 3600000
-    const days = Math.floor(time / 86400000);        // 1000 * 60 * 60 * 24 = 86400000
+    let days    = Math.floor(time / 86400000);        // 1000 * 60 * 60 * 24 = 86400000
+    let hours   = Math.floor((time / 3600000) % 24);  // 1000 * 60 * 60 = 3600000
+    let minutes = Math.floor((time / 60000) % 60);    // 1000 * 60 = 60000
+    let seconds = Math.floor((time / 1000) % 60);
 
-    d.innerHTML = days;
-    h.innerHTML = hours;
-    m.innerHTML = minutes;
-    s.innerHTML = seconds;
+    if (time < 0) {
+      days    = 0;
+      hours   = 0;
+      minutes = 0;
+      seconds = 0;
+    }
+
+    d.innerHTML = days.toString().padStart(2,'0');
+    h.innerHTML = hours.toString().padStart(2,'0');
+    m.innerHTML = minutes.toString().padStart(2,'0');
+    s.innerHTML = seconds.toString().padStart(2,'0');
   }, 1000);
 })();
