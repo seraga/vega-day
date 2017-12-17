@@ -9,7 +9,7 @@ require('./img/dish6.jpg');
 require('./img/dish7.jpg');
 require('./img/dish8.jpg');
 
-require('./js/layout');
+// require('./js/layout');
 // require('./js/ural');
 
 
