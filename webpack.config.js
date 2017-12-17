@@ -12,7 +12,7 @@ module.exports = {
   },
   devServer: {
     // stats: 'errors-only',
-    compress: true,
+    // compress: true,
     open: true,
   },
   module: {
@@ -39,7 +39,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new UglifyJSPlugin(),
+    // new UglifyJSPlugin(),
     new HtmlWebpackPlugin({
       title: 'Vega-Day',
       template: './src/index.html',
