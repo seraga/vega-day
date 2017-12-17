@@ -1,0 +1,29 @@
+///*------------------------------------*\
+//    #PROMO
+//\*------------------------------------*/
+
+.promo__title {
+  margin-bottom: 20px;
+
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 10px;
+  color: $white;
+  text-shadow: 0 0 20px #000;
+}
+
+.promo__link {
+  font-size: 48px;
+  color: transparent;
+  background: url("./img/download.png")no-repeat center;
+}
+
+.paralax {
+  position: relative;
+  height: 213px;
+
+  background-image: url(./img/paralax.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
