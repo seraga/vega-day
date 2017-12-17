@@ -1,2 +1,5 @@
-node_modules/
-package-lock.json
+node_modules
+
+src/js/ural.js
+src/js/layout.js
+yarn.lock

@@ -1,18 +1,19 @@
 
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
-var HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
   entry: './src/app.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'app.bundle.js'
+    filename: '[name].bundle.js',
   },
   devServer: {
-    port: 3000,
-    stats: 'errors-only',
-    // compress: true,
+    // stats: 'errors-only',
+    compress: true,
+    open: true,
   },
   module: {
     rules: [
@@ -22,14 +23,23 @@ module.exports = {
           use: ['css-loader','sass-loader']
         })
       },
-      { test: /\.js$/, exclude: /node_modules/, use: 'babel-loader' },
+      { test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+        options: { presets: ['env'] },
+      },
       { test: /\.(ttf|eot|woff|woff2)$/,
         loader: 'file-loader',
         options: { name: 'fonts/[name].[ext]' },
       },
+      { test: /\.(jpg|png|svg)$/,
+        loader: 'file-loader',
+        options: { name: './img/[name].[ext]' },
+      },
     ]
   },
   plugins: [
+    new UglifyJSPlugin(),
     new HtmlWebpackPlugin({
       title: 'Vega-Day',
       template: './src/index.html',

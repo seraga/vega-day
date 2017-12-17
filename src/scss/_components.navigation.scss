@@ -3,7 +3,7 @@
 //\*------------------------------------*/
 
 
-.topnav {
+.navigation {
   display: flex;
   flex-direction: column;
 
@@ -12,7 +12,7 @@
   }
 }
 
-.topnav__link {
+.navigation__link {
   display: none;
   padding: 14px 16px;
 
@@ -36,35 +36,25 @@
   }
 }
 
-.topnav__icon {
-  display: block;
+.navigation__toggle {
   position: absolute;
-  top: 7px;
-  right: 0;
+  display: block;
+  top: 22px;
+  right: 16px;
 
-  font-size: 25px;
+  font-size: 26px;
   cursor: pointer;
-
-  &:hover {
-    text-decoration: none;
-  }
 
   @include media(sm) {
     display: none;
   }
 }
 
-.topnav--dropdown {
+.navigation--dropdown {
   position: relative;
 
-  & .topnav__link {
+  & .navigation__link {
     display: block;
-  }
-
-  @include media(sm) {
-    & .topnav__icon {
-      display: none;
-    }
   }
 }
 

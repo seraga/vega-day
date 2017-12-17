@@ -6,12 +6,6 @@
 p {
   margin-top: 0;
   margin-left: 0;
-
-  color: $color-gray-1;
-  cursor: default;
-  @include media(md) { color: red; }
-  @include media(lg) { color: blue; }
-  &:hover { color: $green-1}
 }
 
 span {

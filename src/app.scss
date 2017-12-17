@@ -17,6 +17,7 @@
  * Page.................Page-level styles (HTML element).
  * Headings.............Heading styles.
  * Type.................Misc type styles.
+ * Lists................List styles.
  * Images...............Image element styling.
  *
  * OBJECTS
@@ -38,6 +39,7 @@
  * Promo................Lead promo block on the home page.
  * Advantages...........Advantages block.
  * Contacts.............Contacts block.
+ * Map..................Map styling.
  * Subscribe............Subscribe block.
  *
  * TRUMPS
@@ -65,6 +67,7 @@
   'scss/base.page',
   'scss/base.headings',
   'scss/base.type',
+  'scss/base.lists',
   'scss/base.images';
 
 @import
@@ -86,6 +89,7 @@
   'scss/components.promo',
   'scss/components.advantages',
   'scss/components.contacts',
+  'scss/components.map',
   'scss/components.subscribe';
 
 @import
