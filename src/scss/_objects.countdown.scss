@@ -1,0 +1,42 @@
+///*------------------------------------*\
+//    #COUNTDOWN
+//\*------------------------------------*/
+
+.countdown {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @include media(sm){ flex-wrap: nowrap; }
+
+  color: #2a3c3a;
+}
+
+.countdown__literal {
+  display: inline-block;
+  padding: 8px 10px;
+  @include media(sm){ padding: 16px 20px; }
+}
+
+.countdown__number {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 100;
+  font-size: 40px;
+  @include media(sm){ font-size: 72px; }
+  line-height: 80px;
+
+  color: #2a3c3a;
+}
+
+
+.countdown__text {
+  margin: 0;
+  padding-top: 12px;
+
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+
+  color: #aed6d5;
+}
