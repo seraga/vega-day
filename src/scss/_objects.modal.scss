@@ -1,0 +1,72 @@
+///*------------------------------------*\
+//    #GALLERY
+//\*------------------------------------*/
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+
+  padding-top: 120px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-color: rgba(0, 0, 0, 0.4);
+  overflow: auto;
+  transition: 0.5s;
+}
+
+.modal__content {
+  position: relative;
+
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  @include media(md){ width: 700px; }
+}
+
+.modal__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 12px;
+
+  background-image: url("./img/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+
+  cursor: pointer;
+  transition: 0.2s;
+
+  @include media(md){
+    padding: 28px;
+    background-size: 35px;
+    border-bottom-left-radius: 20px;
+  }
+
+  &:hover { animation: swing .4s linear both; }
+}
+
+@keyframes swing {
+  20% { transform: rotate3d(0, 0, 1, 15deg); }
+  40% { transform: rotate3d(0, 0, 1, -10deg); }
+  60% { transform: rotate3d(0, 0, 1, 5deg); }
+  80% { transform: rotate3d(0, 0, 1, -5deg); }
+  to { transform: rotate3d(0, 0, 1, 0deg); }
+}
+
+
+.modal__img {
+  display: block;
+  width: 100%;
+  margin: auto;
+
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .2),
+              0 4px 20px 0 rgba(0, 0, 0, .2);
+}
+
+
