@@ -1,0 +1,14 @@
+///*------------------------------------*\
+//    #PAGE-FOOT
+//\*------------------------------------*/
+
+.page-foot__social-item {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50px;
+
+  &--pinterest { background-image: url("./img/pinterest.svg"); }
+  &--facebook { background-image: url("./img/facebook.svg"); }
+  &--twitter { background-image: url("./img/twitter.svg"); }
+}
+
