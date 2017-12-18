@@ -1,4 +1,14 @@
 !(() => {
+  document.querySelector('.navigation__toggle').addEventListener('click', (event) => {
+    event.preventDefault();
+    document.querySelector('.navigation').classList.toggle('navigation--dropdown');
+  });
+  document.querySelectorAll('.navigation__link').forEach(e => {
+    e.addEventListener('click', () => {
+      document.querySelector('.navigation').classList.remove('navigation--dropdown');
+    });
+  });
+  //===============================================================
   const allLinks = document.querySelectorAll('.navigation__link');
   const allElements = [];
 
