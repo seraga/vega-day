@@ -1,5 +1,5 @@
 !(function () {
-  const deadline = document.querySelector('.countdown').getAttribute('deadline');
+  const deadline = document.querySelector('.countdown').getAttribute('data-deadline');
   const d = document.querySelector('.countdown__days');
   const h = document.querySelector('.countdown__hours');
   const m = document.querySelector('.countdown__minutes');

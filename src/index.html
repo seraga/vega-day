@@ -45,13 +45,13 @@
   <section class="carousel  js  [ w(100)  h(100vh) ]" id="start">
     <div class="carousel__inner">
       <div class="carousel__slide  carousel__slide--1  [  ]">
-        <h1 class="carousel__text  [ abs(cen)  mt(-32px)  t(40px,nup)  t(64px)@s  t(96px)@el  c(white)  tt(0.5) ]">Добро пожаловать</h1>
+        <h2 class="carousel__text  [ abs(cen)  mt(-32px)  t(40px,nup)  t(64px)@s  t(96px)@el  c(white)  tt(0.5) ]">Добро пожаловать</h2>
       </div>
       <div class="carousel__slide  carousel__slide--2  [  ]">
-        <h1 class="carousel__text  [ abs(cen)  mt(-32px)  t(40px,nup)  t(64px)@s  t(96px)@el  c(white)  tt(0.5) ]">в наш</h1>
+        <h2 class="carousel__text  [ abs(cen)  mt(-32px)  t(40px,nup)  t(64px)@s  t(96px)@el  c(white)  tt(0.5) ]">в наш</h2>
       </div>
       <div class="carousel__slide  carousel__slide--3  [  ]">
-        <h1 class="carousel__text  [ abs(cen)  mt(-32px)  t(40px,nup)  t(64px)@s  t(96px)@el  c(white)  tt(0.5) ]">ресторан</h1>
+        <h2 class="carousel__text  [ abs(cen)  mt(-32px)  t(40px,nup)  t(64px)@s  t(96px)@el  c(white)  tt(0.5) ]">ресторан</h2>
       </div>
     </div>
   </section>
@@ -72,7 +72,7 @@
         требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. С другой стороны начало
         повседневной работы по формированию позиции.
       </p>
-      <h3 class="[ my(0)  t(r,10px,w400,h1.1,ls4px,up) ]">Джон Доу</h3>
+      <address class="[ my(0)  t(r,10px,w400,h1.1,ls4px,up) ]">Джон Доу</address
     </div>
     <div class="[ w(100)  w(50)@l  pa(80,15px)  pa(100,112px)@s  c(fff)  bg(2e9f82) ]">
       <h2 class="[ my(0,20px)  t(cen,18px,h1.1,ls5,up) ]">Акция!</h2>
@@ -81,7 +81,7 @@
         Первым посетителям второе блюдо бесплатно! До конца акции:
       </p>
       <!-- countdown -->
-      <ul class="countdown  js" deadline="2017-12-31T08:24:00">
+      <ul class="countdown  js" data-deadline="2017-12-31T08:24:00">
         <li class="countdown__literal">
           <p class="countdown__number  countdown__days">0</p>
           <p class="countdown__text">д</p>
@@ -157,7 +157,7 @@
 
 
 <!-- counters -->
-  <section class="counters  [ dfw  pt(5px)  px(5px) ]">
+  <div class="counters  [ dfw  pt(5px)  px(5px) ]">
     <div class="[ w(100)  w(25)@l  py(20,30px)  px(16px)  t(cen)  bg(c8e665)  ba(5,white) ]">
       <span class="counter  js  [ pr(10px)  t(64px,w100)  c(fff) ]">50</span>
       <span class="[ t(22px)  i  c(333) ]">$</span>
@@ -182,7 +182,7 @@
       <span class="[ t(40px,w100)  c(fff) ]">/</span>
       <span class="[ pl(8px)  t(14px,up)  c(c9b19d) ]">универсальные</span>
     </div>
-  </section>
+  </div>
   <!-- end of counters -->
 
 
@@ -255,7 +255,7 @@
 
 
 <!-- modals -->
-  <section>
+  <div>
     <!-- modal1 -->
     <div class="modal" id="modal1">
       <div class="modal__content">
@@ -312,7 +312,7 @@
         <img class="modal__img" src="img/dish8.jpg" alt="блюдо">
       </div>
     </div>
-  </section>
+  </div>
   <!-- end of modals -->
 
 
@@ -324,13 +324,13 @@
     <h2 class="contact__title  [ mt(0)  mb(25px)  t(cen,18px,w700,ls5,up) ]">Связь</h2>
     <hr class="[ w(50px)  my(0)  py(0,48px)  ba(0)  bt(2,438482) ]">
     <div class="contact__context  [ dfw ]">
-      <form class="contact__form  [ dfc  w(100)  w(60)@l  mr(140px)@l ]" action="">
+      <form class="contact__form  [ dfc  w(100)  w(60)@l  mr(140px)@l ]" action="index.html" method="POST">
         <input class="form__input  [ w(100)  mb(25px)  pa(16px)  t(14px)  c(fff)  bg(t)  ba(fff.3)  f:ba(438482)  bo(0) ]" type="text"
           placeholder="Имя">
         <input class="form__input  [ w(100)  mb(25px)  pa(16px)  t(14px)  c(fff)  bg(t)  ba(fff.3)  f:ba(438482)  bo(0) ]" type="text"
           placeholder="Email">
         <textarea class="form__textarea  [ w(100)  р(222px) mb(25px) pa(16px) t(14px,rzy) c(fff) bg(313131) ba(fff.3) f:ba(438482) bo(0) ]"
-          name="textarea" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
+          name="textarea" cols="30" rows="10" placeholder="Сообщение"></textarea>
         <input class="form__input  [ ml(a)  pa(16px)  px(0)  t(r,12px,w700,up)  c(438482)  bg(t)  ba(0)  bo(0)  cur(p) ]" type="submit"
           value="Отправить">
       </form>
@@ -362,7 +362,7 @@
   <section class="subscribe  [ py(55,40px)  pb(65px)@s  px(35px) ]">
     <h2 class="subscribe__title  [ mt0  t(cen,18px,w700,ls7,up) ]">Оформить подписку</h2>
     <hr class="[ w(50px)  my(0)  pb(50px)  ba(0)  bt(2,438482) ]">
-    <form action="" class="subscribe__form  [ dfc fdr@s  jc-cen ]">
+    <form class="subscribe__form  [ dfc fdr@s  jc-cen ]" action="index.html" method="POST">
       <input class="form__input  [ w(100)  w(300px)@s  mb(30px)  mb(0)@s  mr(30px)  py(16px)  t(14px)  c(black)  bg(t)  ba(t)  bb(2,313131)  bo(0) ]"
         type="text" placeholder="Ваш email">
       <input class="form__input  [ as-cen  pa(16px,0)  t(l,12px,w700,up)  c(313131)  h:c(486164)  bg(t)  ba(t)  cur(p) ]" type="submit"
@@ -376,7 +376,7 @@
 
 
 <!-- page-foot -->
-  <section class="page-foot  [ df  ai-cen  pa(20px)  bg(313131) ]">
+  <footer class="page-foot  [ df  ai-cen  pa(20px)  bg(313131) ]">
     <div class="page-foot__social  [ wmin(202px)@m  mr(50px) ]">
       <a class="page-foot__social-item  page-foot__social-item--pinterest  [ dn  dib@m  pa(32px)  h:scale(1.1)  tt(0.5) ]" href=""></a>
       <a class="page-foot__social-item  page-foot__social-item--facebook  [ dn  dib@m  pa(32px)  h:scale(1.1)  tt(0.5) ]" href=""></a>
@@ -385,7 +385,7 @@
     <p class="page-foot__text  [ mb(0)  t(14px,w400,ls5)  c(fff) ]">© 2017, Vega Day - кулинарный шаблон сайта,
       <a class="page-foot__link  [ t(ui)  c(fff) ]" href="https://github.com/seraga" target="_blank">Seraga</a>
     </p>
-  </section>
+  </footer>
   <!-- end of page-foot -->
 
 
