@@ -33,7 +33,6 @@
  * COMPONENTS
  * Page-head............Page header styles.
  * Page-foot............Page footer styles.
- * Page-copyright.......Page copyright styles.
  * Navigation...........Site’s main navigation area.
  * Logo.................Logotype styling.
  * About................About block.
@@ -84,7 +83,6 @@
 @import
   'scss/components.page-head',
   'scss/components.page-foot',
-  'scss/components.page-copyright',
   'scss/components.navigation',
   'scss/components.logo',
   'scss/components.about',
