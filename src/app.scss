@@ -21,6 +21,7 @@
  * Images...............Image element styling.
  *
  * OBJECTS
+ * Card.................Card styling.
  * Carousel.............Carousel styling.
  * Countdown............Countdown timer styling.
  * Counter..............Counter-Up styling.
@@ -71,6 +72,7 @@
   'scss/base.images';
 
 @import
+  'scss/objects.card',
   'scss/objects.carousel',
   'scss/objects.countdown',
   'scss/objects.counter',
