@@ -1,0 +1,22 @@
+///*------------------------------------*\
+//    #CARD
+//\*------------------------------------*/
+
+.card {
+  background-repeat: no-repeat;
+  background-position: top;
+  background-image: url("./img/square.png");
+
+  &:hover { background-image: url("./img/square_grey.png"); }
+}
+
+.card__icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50px;
+
+  &--search { background-image: url("./img/fa-search.svg"); }
+  &--heart { background-image: url("./img/fa-heart.svg"); }
+  &--group { background-image: url("./img/fa-group.svg"); }
+  &--link { background-image: url("./img/fa-link.svg"); }
+}
