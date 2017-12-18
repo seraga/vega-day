@@ -8,14 +8,18 @@
   <title>Vega-Day</title>
 </head>
 
-<body class="[  ]">
+<body>
+
+
+
+
 
 <!-- page-head -->
-  <div class="page-head  [ fix  df  jc-sb  l(0,0,-,0)  bg(white.3)  z(2) ]">
+  <div class="page-head  [ fix  df  jc-sb  l(0,0,-,0)  bg(white.3)  z(10) ]">
     <!-- logo -->
     <div class="logo">
-      <h1 class="logo__title  [  ]">
-        <a class="logo__link  [  ]" href="">
+      <h1 class="logo__title">
+        <a class="logo__link" href="">
           Vega Day
           <em class="logo__subtitle  [ db  t(ls7)  c(yellow) ]">ресторан</em>
         </a>
@@ -25,26 +29,17 @@
     <nav class="navigation  js  [ wmin(145px)  pt(16px) ]">
       <a class="navigation__link  navigation__link--active" href="#start">Главная</a>
       <a class="navigation__link" href="#about">О&nbsp;нас</a>
-      <a class="navigation__link" href="#what-we-do">Услуги</a>
+      <a class="navigation__link" href="#advantages">Услуги</a>
       <a class="navigation__link" href="#works">Проекты</a>
       <a class="navigation__link" href="#contact">Связь</a>
-      <span class="navigation__toggle [ top(22px) right(16px) ]">&#9776;</span>
-      <!-- ☰ -->
-
-      <script>
-        document.querySelector('.navigation__toggle').addEventListener('click', (event) => {
-          event.preventDefault();
-          document.querySelector('.navigation').classList.toggle('navigation--dropdown');
-        });
-        document.querySelectorAll('.navigation__link').forEach(e => {
-          e.addEventListener('click', () => {
-            document.querySelector('.navigation').classList.remove('navigation--dropdown');
-          });
-        });
-      </script>
+      <span class="navigation__toggle [ top(22px) right(16px) ]">&#9776;</span><!-- ☰ -->
     </nav>
   </div>
   <!-- end of page-head -->
+
+
+
+
 
 <!-- carousel -->
   <section class="carousel  js  [ w(100)  h(100vh) ]" id="start">
@@ -60,6 +55,11 @@
       </div>
     </div>
   </section>
+  <!-- end of carousel -->
+
+
+
+
 
 <!-- about -->
   <section class="about  [ dfw  bg(515661) ]" id="about">
@@ -102,70 +102,93 @@
 
     </div>
   </section>
+  <!-- end of about -->
+
+
+
+
+
 <!-- promo -->
   <section class="promo">
-    <div class="paralax  js  [ rel  h(213px)  bg(paralax.jpg,paralax) ]">
+    <div class="paralax  js  [ rel  h(213px) ]">
       <div class="[ abs(cen)  t(cen)  pt(16px) ]">
         <h2 class="promo__title  [ my(0,20px)  t(18px,w700,ls10,up)  c(white)  ts(0,0,20,000) ]">Что мы предлагаем?</h2>
-        <a class="promo__link  [ t(48px)  c(t) ]" href="#what-we-do">____</a>
+        <a class="promo__link  [ t(48px)  c(t) ]" href="#advantages">____</a>
       </div>
     </div>
   </section>
-<!-- what-we-do -->
-  <section class="what-we-do  [ pa(16px)  pt(100px)  t(14px,h1.4)  c(333)  bg(f8f6f5) ]" id="what-we-do">
+  <!-- end of promo -->
+
+
+
+
+
+<!-- advantages -->
+  <section class="advantages  [ pa(16px)  pt(100px)  t(14px)  c(333)  bg(f8f6f5) ]" id="advantages">
     <h2 class="[ my(0,40px)  t(cen,18px,w700,ls7,up) ]">Преимущества</h2>
     <hr class="[ w(50px)  my(0)  pb(55px)  ba(0)  bt(2,fff) ]">
     <div class="all-cards  [ dfw ]">
-      <div class="card  [ rel  w(100)  w(25)@m  py(208,72px)  tcen  bg(square.png,top)  h:bg(square_grey.png,top) ]">
-        <div class="card__icon  [ abs(cenx)  top(55px)  pa(32px)  bg(fa-search.svg,center,50) ]"></div>
+      <div class="card  [ rel  w(100)  w(25)@m  py(208,72px)  tcen ]">
+        <div class="card__icon  card__icon--search  [ abs(cenx)  top(55px)  pa(32px) ]"></div>
         <h3 class="card__title  [ my(0,32px)  t(up) ]">Профессионализм</h3>
         <p class="card__text  [ my(0) ]">Квалифицированный персонал</p>
       </div>
-      <div class="card  [ rel  w(100)  w(25)@m  py(208,72px)  tcen  bg(square.png,top)  h:bg(square_grey.png,top) ]">
-        <div class="card__icon  [ abs(cenx)  top(55px)  pa(32px)  bg(fa-heart.svg,center,50) ]"></div>
+      <div class="card  [ rel  w(100)  w(25)@m  py(208,72px)  tcen ]">
+        <div class="card__icon  card__icon--heart  [ abs(cenx)  top(55px)  pa(32px) ]"></div>
         <h3 class="card__title  [ my(0,32px)  t(up) ]">Ценовая политика</h3>
         <p class="card__text  [ my(0) ]">Цены доступны каждому!</p>
       </div>
-      <div class="card  [ rel  w(100)  w(25)@m  py(208,72px)  tcen  bg(square.png,top)  h:bg(square_grey.png,top) ]">
-        <div class="card__icon  [ abs(cenx)  top(55px)  pa(32px)  bg(fa-group.svg,center,50) ]"></div>
+      <div class="card  [ rel  w(100)  w(25)@m  py(208,72px)  tcen ]">
+        <div class="card__icon  card__icon--group  [ abs(cenx)  top(55px)  pa(32px) ]"></div>
         <h3 class="card__title  [ my(0,32px)  t(up) ]">Расположение</h3>
         <p class="card__text  [ my(0) ]">Удобное расположение в центре города</p>
       </div>
-      <div class="card  [ rel  w(100)  w(25)@m  py(208,72px)  tcen  bg(square.png,top)  h:bg(square_grey.png,top) ]">
-        <div class="card__icon  [ abs(cenx)  top(55px)  pa(32px)  bg(fa-link.svg,center,50) ]"></div>
+      <div class="card  [ rel  w(100)  w(25)@m  py(208,72px)  tcen ]">
+        <div class="card__icon  card__icon--link  [ abs(cenx)  top(55px)  pa(32px) ]"></div>
         <h3 class="card__title  [ my(0,32px)  t(up) ]">Акции</h3>
         <p class="card__text  [ my(0) ]">Описание акции</p>
       </div>
     </div>
   </section>
+  <!-- end of advantages -->
+
+
+
+
 
 <!-- counters -->
   <section class="counters  [ dfw  pt(5px)  px(5px) ]">
-    <div class="[ w100  w25@l  py(20,30px)  px(16px)  t(cen)  bg(c8e665)  ba(5,white) ]">
+    <div class="[ w(100)  w(25)@l  py(20,30px)  px(16px)  t(cen)  bg(c8e665)  ba(5,white) ]">
       <span class="counter  js  [ pr(10px)  t(64px,w100)  c(fff) ]">50</span>
       <span class="[ t(22px)  i  c(333) ]">$</span>
       <span class="[ t(40px,w100)  c(fff) ]">/</span>
-      <span class="[ pl(0.5)  t(14px,w400,up)  c(846348) ]">завтрак</span>
+      <span class="[ pl(8px)  t(14px,up)  c(846348) ]">завтрак</span>
     </div>
-    <div class="[ w100  w25@l  py(20,30px)  px(16px)  t(cen)  bg(68c170)  ba(5,white) ]">
+    <div class="[ w(100)  w(25)@l  py(20,30px)  px(16px)  t(cen)  bg(68c170)  ba(5,white) ]">
       <span class="counter  js  [ pr(10px)  t(64px,w100)  c(fff) ]">100</span>
       <span class="[ t(22px)  i  c(333) ]">$</span>
       <span class="[ t(40px,w100)  c(fff) ]">/</span>
-      <span class="[ pl(0.5)  t(14px,w400,up)  c(634a36) ]">обед</span>
+      <span class="[ pl(8px)  t(14px,up)  c(634a36) ]">обед</span>
     </div>
-    <div class="[ w100  w25@l  py(20,30px)  px(16px)  t(cen)  bg(2e9f82)  ba(5,white) ]">
+    <div class="[ w(100)  w(25)@l  py(20,30px)  px(16px)  t(cen)  bg(2e9f82)  ba(5,white) ]">
       <span class="counter  js  [ pr(10px)  t(64px,w100)  c(fff) ]">150</span>
       <span class="[ t(22px)  i  c(333) ]">$</span>
       <span class="[ t(40px,w100)  c(fff) ]">/</span>
-      <span class="[ pl(0.5)  t(14px,w400,up)  c(e9e0d8) ]">ужин</span>
+      <span class="[ pl(8px)  t(14px,up)  c(e9e0d8) ]">ужин</span>
     </div>
-    <div class="[ w100  w25@l  py(20,30px)  px(16px)  t(cen)  bg(515661)  ba(5,white) ]">
+    <div class="[ w(100)  w(25)@l  py(20,30px)  px(16px)  t(cen)  bg(515661)  ba(5,white) ]">
       <span class="counter  js  [ pr(10px)  t(64px,w100)  c(fff) ]">200</span>
       <span class="[ t(22px)  i  c(333) ]">$</span>
       <span class="[ t(40px,w100)  c(fff) ]">/</span>
-      <span class="[ pl(0.5)  t(14px,w400,up)  c(c9b19d) ]">универсальные</span>
+      <span class="[ pl(8px)  t(14px,up)  c(c9b19d) ]">универсальные</span>
     </div>
   </section>
+  <!-- end of counters -->
+
+
+
+
+
 <!-- gallery -->
   <section class="gallery" id="works">
     <!-- photo-1 -->
@@ -225,6 +248,11 @@
       </figcaption>
     </figure>
   </section>
+  <!-- end of gallery -->
+
+
+
+
 
 <!-- modals -->
   <section>
@@ -285,17 +313,23 @@
       </div>
     </div>
   </section>
+  <!-- end of modals -->
+
+
+
+
+
 <!-- contact -->
   <section class="contact  [ py(100,80px)  px(30px)  px(100px)@s  bg(313131)  c(fff)  tt ]" id="contact">
     <h2 class="contact__title  [ mt(0)  mb(25px)  t(cen,18px,w700,ls5,up) ]">Связь</h2>
     <hr class="[ w(50px)  my(0)  py(0,48px)  ba(0)  bt(2,438482) ]">
     <div class="contact__context  [ dfw ]">
       <form class="contact__form  [ dfc  w(100)  w(60)@l  mr(140px)@l ]" action="">
-        <input class="form__input  [ w100  mb(25px)  pa(16px)  t(14px)  c(fff)  bg(t)  ba(fff.3)  f:ba(438482)  bo(0) ]" type="text"
+        <input class="form__input  [ w(100)  mb(25px)  pa(16px)  t(14px)  c(fff)  bg(t)  ba(fff.3)  f:ba(438482)  bo(0) ]" type="text"
           placeholder="Имя">
-        <input class="form__input  [ w100  mb(25px)  pa(16px)  t(14px)  c(fff)  bg(t)  ba(fff.3)  f:ba(438482)  bo(0) ]" type="text"
+        <input class="form__input  [ w(100)  mb(25px)  pa(16px)  t(14px)  c(fff)  bg(t)  ba(fff.3)  f:ba(438482)  bo(0) ]" type="text"
           placeholder="Email">
-        <textarea class="form__textarea  [ w100  р(222px) mb(25px) pa(16px) t(14px) c(fff) bg(313131) ba(fff.3) f:ba(438482) bo(0) ]"
+        <textarea class="form__textarea  [ w(100)  р(222px) mb(25px) pa(16px) t(14px,rzy) c(fff) bg(313131) ba(fff.3) f:ba(438482) bo(0) ]"
           name="textarea" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
         <input class="form__input  [ ml(a)  pa(16px)  px(0)  t(r,12px,w700,up)  c(438482)  bg(t)  ba(0)  bo(0)  cur(p) ]" type="submit"
           value="Отправить">
@@ -306,16 +340,28 @@
           <br>ул. Кальварийская, 24</p>
         <p class="contact__links  [ mt(0)  mb(0)  t(16px,w300,h1.4)  c(fff.3) ]">Телефон: 111-111-111
           <br>Fax: 111-111-111
-          <br>email@youradress.com</p>
+          <br>email@youraddress.com</p>
       </div>
     </div>
   </section>
+  <!-- end of contact -->
+
+
+
+
+
 <!-- map -->
-  <div class="map  [ bg(map.jpg,center) ]" id="map"></div>
+  <div class="map" id="map"></div>
+  <!-- end of map -->
+
+
+
+
+
 <!-- subscribe -->
   <section class="subscribe  [ py(55,40px)  pb(65px)@s  px(35px) ]">
     <h2 class="subscribe__title  [ mt0  t(cen,18px,w700,ls7,up) ]">Оформить подписку</h2>
-    <hr class="[ w50px  my(0)  pb(50px)  ba(0)  bt(2,438482) ]">
+    <hr class="[ w(50px)  my(0)  pb(50px)  ba(0)  bt(2,438482) ]">
     <form action="" class="subscribe__form  [ dfc fdr@s  jc-cen ]">
       <input class="form__input  [ w(100)  w(300px)@s  mb(30px)  mb(0)@s  mr(30px)  py(16px)  t(14px)  c(black)  bg(t)  ba(t)  bb(2,313131)  bo(0) ]"
         type="text" placeholder="Ваш email">
@@ -323,20 +369,30 @@
         value="Подписаться">
     </form>
   </section>
-<!-- footer -->
-  <section class="footer  [ df  ai-cen  pa(20px)  bg(313131) ]">
-    <div class="footer__social  [ wmin(202px)@m  mr(50px) ]">
-      <a class="footer__pinterest  [ dn  dib@m  pa(32px)  bg(pinterest.svg,center,50)  h:scale(1.1)  tt(0.5) ]" href=""></a>
-      <a class="footer__facebook  [ dn  dib@m  pa(32px)  bg(facebook.svg,center,50)  h:scale(1.1)  tt(0.5) ]" href=""></a>
-      <a class="footer__twitter  [ dn  dib@m  pa(32px)  bg(twitter.svg,center,50)  h:scale(1.1)  tt(0.5) ]" href=""></a>
+  <!-- end of subscribe -->
+
+
+
+
+
+<!-- foot-page -->
+  <section class="page-foot  [ df  ai-cen  pa(20px)  bg(313131) ]">
+    <div class="page-foot__social  [ wmin(202px)@m  mr(50px) ]">
+      <a class="page-foot__social-item  page-foot__social-item--pinterest  [ dn  dib@m  pa(32px)  h:scale(1.1)  tt(0.5) ]" href=""></a>
+      <a class="page-foot__social-item  page-foot__social-item--facebook  [ dn  dib@m  pa(32px)  h:scale(1.1)  tt(0.5) ]" href=""></a>
+      <a class="page-foot__social-item  page-foot__social-item--twitter  [ dn  dib@m  pa(32px)  h:scale(1.1)  tt(0.5) ]" href=""></a>
     </div>
-    <p class="footer__text  [ mb(0)  t(14px,w400,ls5)  c(fff) ]">© 2017, Vega Day - кулинарный шаблон сайта,
-      <a class="footer__link  [ t(ui)  c(fff) ]" href="">Seraga</a>
+    <p class="page-foot__text  [ mb(0)  t(14px,w400,ls5)  c(fff) ]">© 2017, Vega Day - кулинарный шаблон сайта,
+      <a class="page-foot__link  [ t(ui)  c(fff) ]" href="https://github.com/seraga">Seraga</a>
     </p>
   </section>
+  <!-- end of foot-page -->
 
-<!-- end -->
+
+
+
+
+<!-- scripts -->
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBw1sb5fTiLm7QJT25DuZ3zske7B0R-5wA&callback=initMap"></script>
 </body>
-
 </html>
