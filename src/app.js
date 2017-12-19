@@ -11,7 +11,7 @@ import './img/dish7.jpg';
 import './img/dish8.jpg';
 
 // import './js/layout';
-// import './js/ural';
+// import './js/urals';
 
 
 import './js/m-carousel';
