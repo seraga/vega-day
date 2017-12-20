@@ -6,21 +6,20 @@
 .navigation {
   display: flex;
   flex-direction: column;
+  @include media(sm) { flex-direction: row; }
 
   min-width: 145px;
   padding-top: 16px;
-
-  @include media(sm) {
-    flex-direction: row;
-  }
 }
 
 .navigation__link {
   display: none;
+  @include media(sm) { display: block; }
   padding: 14px 16px;
 
   font-weight: bold;
   font-size: 11px;
+  @include media(xl) { font-size: 14px; }
   text-decoration: none;
   color: $gray-1;
 
@@ -31,33 +30,22 @@
     text-decoration-skip: ink;
   }
 
-  @include media(sm) {
-    display: block;
-  }
-  @include media(xl) {
-    font-size: 14px;
-  }
 }
 
 .navigation__toggle {
   position: absolute;
   display: block;
+  @include media(sm) { display: none; }
   top: 22px;
   right: 16px;
 
   font-size: 26px;
   cursor: pointer;
-
-  @include media(sm) {
-    display: none;
-  }
 }
 
 .navigation--dropdown {
   position: relative;
 
-  & .navigation__link {
-    display: block;
-  }
+  & .navigation__link { display: block; }
 }
 
