@@ -29,6 +29,7 @@
  * Modal................Modal for gallery.
  * Form.................Form styles.
  * Inline-form..........Inline-form styles.
+ * Paralax..............Paralax styles.
  *
  * COMPONENTS
  * Page-head............Page header styles.
@@ -78,7 +79,8 @@
   'scss/objects.gallery',
   'scss/objects.modal',
   'scss/objects.form',
-  'scss/objects.inline-form';
+  'scss/objects.inline-form',
+  'scss/objects.paralax';
 
 @import
   'scss/components.page-head',
