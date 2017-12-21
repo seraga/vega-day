@@ -36,12 +36,16 @@ module.exports = {
         loader: 'file-loader',
         options: { name: './img/[name].[ext]' },
       },
+      {
+        test: /\.html$/,
+        loader: 'html-loader'
+      },
     ]
   },
   plugins: [
     // new UglifyJSPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Vega-Day',
+      // title: 'Vega-Day',
       template: './src/index.html',
     }),
     new ExtractTextPlugin({
