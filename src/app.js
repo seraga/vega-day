@@ -15,15 +15,10 @@ import './img/dish8.jpg';
 
 
 import './js/m-carousel';
+import './js/m-carousel-text';
 import './js/m-countdown';
 import './js/m-counter';
 import './js/m-map';
 import './js/m-modal';
 import './js/m-navigation';
 import './js/m-paralax';
-
-
-
-
-
-console.log('Hello from app.js');
