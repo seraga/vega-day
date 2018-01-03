@@ -7,7 +7,7 @@
     "start": "npm run dev",
     "dev": "webpack-dev-server",
     "clean": "rimraf ./dist/*",
-    "prod": "npm run clean && webpack -p",
+    "prod": "npm run clean && webpack -p && firebase deploy",
     "watch": "webpack --progress --watch"
   },
   "repository": {
