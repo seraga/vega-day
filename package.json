@@ -8,8 +8,7 @@
     "dev": "webpack-dev-server",
     "clean": "rimraf ./dist/*",
     "prod": "npm run clean && webpack -p",
-    "watch": "webpack --progress --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "webpack --progress --watch"
   },
   "repository": {
     "type": "git",
